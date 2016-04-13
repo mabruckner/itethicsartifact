@@ -2,13 +2,27 @@
     <head>
         <script src="/js/angular.js"></script>
         <script src="/js/main.js"></script>
+<style type="text/css">
+body {
+    padding-top: 30px;
+}
+</style>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body ng-app="choose" ng-controller="WizardController">
-        <h1> hello </h1>
-        <p> hello </p>
-        <div ng-repeat="question in questions">
-            {{question}}
+        <div class="container">
+            <div class="jumbotron">
+                <h1>The Open Source Wizard</h1>
+                <p></p>
+            </div>
+            <div ng-repeat="question in questions" class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">title</h3>
+                </div>
+                <div class="panel-body">
+                    {{question}}
+                </div>
+            </div>
         </div>
     </body>
 </html>
