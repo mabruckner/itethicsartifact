@@ -1,10 +1,14 @@
 <html>
     <head>
         <script src="/js/angular.js"></script>
+        <script src="/js/main.js"></script>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
     </head>
-    <body>
+    <body ng-app="choose" ng-controller="WizardController">
         <h1> hello </h1>
         <p> hello </p>
+        <div ng-repeat="question in questions">
+            {{question}}
+        </div>
     </body>
 </html>
