@@ -20,7 +20,7 @@ body {
             </nav>
             <div class="jumbotron" ng-if="current.type=='question'">
                 <button class="btn btn-sm" ng-click="back()"><span aria-hidden="true">&larr;</span> Back</button>
-                <h1 class="text-center">{{ current.question }}</h1>
+                <h3 class="text-center">{{ current.question }}</h3>
                 <div class="row text-center">
                     <div class="{{$parent.colclass($parent.current.choices.length)}} text-center" ng-repeat="choice in current.choices">
                         <button ng-click="$parent.choose(choice)" class="btn btn-primary btn-lg">
@@ -29,7 +29,7 @@ body {
                     </div>
                     {{ choice }}
                 </div>
-                
+
             </div>
             <div class="jumbotron" ng-if="current.type=='license'">
                 <button class="btn btn-sm" ng-click="back()"><span aria-hidden="true">&larr;</span> Back</button>
