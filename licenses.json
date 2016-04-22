@@ -1,0 +1,7 @@
+{
+    "raspberry":{
+        "name":"Raspberry Ice-Cream",
+        "description":"Red and cold, raspberry ice-cream is the iced cream of raspberry-lovers",
+        "attributes":["raspberry flavor","red","cold"]
+    }
+}

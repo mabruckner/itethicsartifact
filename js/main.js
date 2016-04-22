@@ -4,18 +4,27 @@ var app = angular.module('choose', []).config([
 
 app.controller('WizardController',['$scope','$http',
         function($scope,$http) {
-            $scope.licenses = [];
             $scope.questions = ['asdfhlkjdsa hjlksa fdsaj', 'asdlhfiuvlj ij hjidk lsj'];
+            $scope.tree = {};
+            $scope.current = {};
+            $scope.answers = [];
+            $scope.licenses = {};
+                console.log($scope);
+            $scope.choose = function(choice) {
+                console.log($scope);
+                $scope.current = $scope.current[choice];
+                $scope.answers.push(choice);
+            };
+            $http.get('/licenses.json').then(function(dat){
+                $scope.licenses = dat.data;
+            },angular.noop);
             $http.get('/license_choices.json').then(function(dat){
                 console.log(dat);
-                $scope.licenses = dat.data.licenses;
-                $scope.questions = dat.data.questions;
+                $scope.tree = dat.data;
+                $scope.current = $scope.tree;
             },function(err) {
                 console.log("ERR");
                 console.log(err);
             });
             $scope.currentquestion = 0;
-            $scope.answers = $scope.questions.forEach(function(trash) {
-                return true;
-            },this);
         }]);

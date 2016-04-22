@@ -1,30 +1,18 @@
 {
-    "licenses": ["AGPL", "GPLv2", "GPLv3", "LGPL", "Apache", "MIT", "BSD", "Unlicense", "Creative Commons"],
-    "questions":
-        [
-            {
-                "question": "Are you licensing code?",
-                "licenses": ["AGPL", "GPLv2", "GPLv3", "LGPL", "Apache", "MIT", "BSD", "Unlicense"]
-            },
-            {
-                "question": "Do you need to make changes without releasing your source code?",
-                "licenses": ["Apache", "MIT", "BSD", "Unlicense"]
-            },
-            {
-                "question": "Do you want other application to be able to link to your code without dislosing their source?",
-                "licenses": ["Apache", "MIT", "BSD", "Unlicense", "LGPL"]
-            },
-            {
-                "question": "Do you want to allow sublicensing?",
-                "licenses": ["Apache", "MIT", "BSD"]
-            },
-            {
-                "question": "Do you want your code to be released into the public domain?",
-                "licenses": ["Unlicense"]
-            },
-            {
-                "question": "Do you need contributors to waive patent rights on their contributions?",
-                "licenses": ["Apache", "GPL", "AGPL"]
-            }
-        ]
+    "type":"question",
+    "question":"do you like raspberry?",
+    "choices":["Yes","Not really"],
+    "Yes":{
+        "type":"license",
+        "id":"raspberry"
+    },
+    "Not really":{
+        "type":"question",
+        "question":"do you like ice cream?",
+        "choices":["Yes"],
+        "Yes":{
+            "type":"license",
+            "id":"raspberry"
+        }
+    }
 }

@@ -11,9 +11,22 @@ body {
     </head>
     <body ng-app="choose" ng-controller="WizardController">
         <div class="container">
-            <div class="jumbotron">
-                <h1>The Open Source Wizard</h1>
-                <p></p>
+            <div class="jumbotron" ng-if="current.type=='question'">
+                <h1>{{ current.question }}</h1>
+                <button ng-repeat="choice in current.choices" ng-click="$parent.choose(choice)">
+                    {{ choice }}
+                </button>
+                
+            </div>
+            <div class="jumbotron" ng-if="current.type=='license'">
+                <h2>{{ licenses[current.id].name }}</h2>
+                <p>{{ licenses[current.id].description }}</p>
+                <h3>Attributes</h3>
+                <ul>
+                    <li ng-repeat="attribute in licenses[current.id].attributes">
+                        {{ attribute }}
+                    </li>
+                </ul>
             </div>
             <div ng-repeat="question in questions" class="panel panel-default">
                 <div class="panel-heading">
