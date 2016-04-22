@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script src="/js/angular.js"></script>
+        <script src="/js/main.js"></script>
+<style type="text/css">
+body {
+    padding-top: 30px;
+}
+</style>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body ng-app="choose">
+        <div class="container" ng-controller="WizardController">
+            <nav>
+                <ul class="pager">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/chooser.html">License Chooser</a></li>
+                </ul>
+            </nav>
+            <div class="panel panel-default" ng-repeat="(id,data) in licenses">
+                <div class="panel-heading">
+                    <h3 class="panel-title">{{ data.name }}</h3>
+                </div>
+                <div class="panel-body">
+                    <p>{{ data.description }}</p>
+                    <h4>Attributes</h4>
+                    <ul>
+                        <li ng-repeat="attribute in data.attributes">
+                            {{ attribute }}
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
