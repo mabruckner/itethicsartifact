@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="/js/angular.js"></script>
+        <script src="/js/main.js"></script>
+<style type="text/css">
+body {
+    padding-top: 30px;
+}
+</style>
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body ng-app="choose" ng-controller="WizardController">
+        <div class="container">
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a ng-click="back()"><span aria-hidden="true">&larr;</span> Back</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/list.html">Licenses</a></li>
+                </ul>
+                </ul>
+            </nav>
+            <div class="jumbotron" ng-if="current.type=='question'">
+                <h1 class="text-center">{{ current.question }}</h1>
+                <div class="row text-center">
+                    <div class="{{$parent.colclass($parent.current.choices.length)}} text-center" ng-repeat="choice in current.choices">
+                        <button ng-click="$parent.choose(choice)" class="btn btn-primary btn-lg">
+                            {{ choice }}
+                        </button>
+                    </div>
+                    {{ choice }}
+                </button>
+                </div>
+                
+            </div>
+            <div class="jumbotron" ng-if="current.type=='license'">
+                <h2>{{ licenses[current.id].name }}</h2>
+                <p>{{ licenses[current.id].description }}</p>
+                <h3>Attributes</h3>
+                <ul>
+                    <li ng-repeat="attribute in licenses[current.id].attributes">
+                        {{ attribute }}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
