@@ -1,7 +1,47 @@
 {
-    "raspberry":{
-        "name":"Raspberry Ice-Cream",
-        "description":"Red and cold, raspberry ice-cream is the iced cream of raspberry-lovers",
-        "attributes":["raspberry flavor","red","cold"]
+    "cc":{
+        "name":"Creative Commons",
+        "description":"Creative commons is for creative works",
+        "attributes":["creative works","attribution required"]
+    },
+    "unlicense":{
+        "name":"Unlicense",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "mit":{
+        "name":"MIT",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "bsd":{
+        "name":"BSD",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "apache":{
+        "name":"Apache",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "lgpl":{
+        "name":"LGPL",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "gplv2":{
+        "name":"GPLv2",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "gplv3":{
+        "name":"GPLv3",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
+    },
+    "agpl":{
+        "name":"AGPL",
+        "description":"Unlicense is public domain",
+        "attributes":["public domain","no attribution required"]
     }
 }
