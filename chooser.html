@@ -29,7 +29,7 @@
             </div>
             <div class="jumbotron" ng-if="current.type=='license'">
                 <button class="btn btn-sm" ng-click="back()"><span aria-hidden="true">&larr;</span> Back</button>
-                <h2>{{ licenses[current.id].name }}</h2>
+                <h3>{{ licenses[current.id].name }}</h2>
                 <p>{{ licenses[current.id].description }}</p>
                 <h3>Attributes</h3>
                 <ul>
@@ -37,6 +37,8 @@
                         {{ attribute }}
                     </li>
                 </ul>
+                <h3>Link</h3>
+                <a href="{{ licenses[current.id].link }}">{{ licenses[current.id].link }}</a>
             </div>
         </div>
     </body>

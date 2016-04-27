@@ -1,47 +1,56 @@
 {
     "cc":{
         "name":"Creative Commons",
-        "description":"Creative commons is for creative works",
-        "attributes":["creative works","attribution required"]
+        "description":"Creativite Commons is a license that enables the distribution of copyrighted work. It is typically used for creative works like music, art, and writings. There are multiple versions of the Creative Commons license that put restrictions on commercial use, remixing, and attribution. There is also a version of the creative commons license that can be used to release a work into the public domain.",
+        "attributes":["creative works","attribution required", "different levels of restriction"],
+        "link": "https://creativecommons.org/"
     },
     "unlicense":{
         "name":"Unlicense",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"The unlicense license releases the work into the public domain. It contains a dedication of your work to the public domain and a no-warranty statement.",
+        "attributes":["public domain","no attribution required"],
+        "link": "http://unlicense.org/"
     },
     "mit":{
         "name":"MIT",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"The MIT license is a very permissive and simple license. It requires users to provide attribution and releases the author from liability for the work. The MIT license is used by AngularJS, cURL, and Ruby on Rails.",
+        "attributes":["permissive","attribution required", "liability waived"],
+        "link": "https://opensource.org/licenses/MIT"
     },
     "bsd":{
         "name":"BSD",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"The BSD license is a very permissive and simple license. It requires users to provide attribution and releases the author from liability for the work. The BSD license is used by FreeBSD and LibreSSL.",
+        "attributes":["permissive","attribution required", "liability waived"],
+        "link": "https://opensource.org/licenses/BSD-3-Clause"
     },
     "apache":{
         "name":"Apache",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
-    },
-    "lgpl":{
-        "name":"LGPL",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"The Apaches license is a very permissive license similar to MIT and BSD. It required attribution, release from liability, and a patent grant from contributors. Apache is used by Android and httpd.",
+        "attributes":["permissive","attribution required", "liability waived", "requires patent grant from contributors" ],
+        "link": "http://www.apache.org/licenses/"
     },
     "gplv2":{
         "name":"GPLv2",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"GPLv2 (General Public License) guarantees users the freedom to run, study, share, and modify software. GPLv2 forces the source code of derived works to be distributed under the same license. GPLv2 is used by linux and the openJDK.",
+        "attributes":["copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
+        "link": "http://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html"
     },
     "gplv3":{
         "name":"GPLv3",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"The GPLv3 (General Public License) guarantees users the freedom to run, study, share, and modify software. GPLv3 forces the source code of derived works to be distributed under the same license. GPLv3 fixes a loophole in GPLV2 by requiring that hardware not be used to prevent modification of software.",
+        "attributes":["copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
+        "link": "http://www.gnu.org/licenses/quick-guide-gplv3.en.html"
+    },
+    "lgpl":{
+        "name":"LGPL",
+        "description":"The LGPL (General Public License) guarantees users the freedom to run, study, share, and modify software. The LGPL forces the source code of derived works to be distributed under the same license. The LGPL allows other software to link to it without being forced to retain the same license. This makes it popular as a license for libraries and modules.",
+        "attributes":["copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
+        "link": "http://www.gnu.org/licenses/lgpl-3.0.en.html"
     },
     "agpl":{
         "name":"AGPL",
-        "description":"Unlicense is public domain",
-        "attributes":["public domain","no attribution required"]
+        "description":"The AGPL (Affero General Public License) guarantees users the freedom to run, study, share, and modify software. AGPL forces the source code of derived works to be distributed under the same license. The AGPL fixes a loophole in the GPL by forcing modifications to be shared if modified LGPL source code is run on a server.",
+        "attributes":["copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
+        "link": "http://www.gnu.org/licenses/why-affero-gpl.en.html"
     }
 }

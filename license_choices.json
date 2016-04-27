@@ -70,7 +70,16 @@
         }
     },
     "No":{
-        "type":"license",
-        "id":"cc"
+        "type":"question",
+        "question":"Do you want to release your work into the public domain?",
+        "choices":["Yes","No"],
+        "Yes":{
+            "type":"license",
+            "id":"unlicense"
+        },
+        "No":{
+            "type":"license",
+            "id":"cc"
+        }
     }
 }
