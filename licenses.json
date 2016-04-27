@@ -44,13 +44,13 @@
     "lgpl":{
         "name":"LGPL",
         "description":"The LGPL (General Public License) guarantees users the freedom to run, study, share, and modify software. The LGPL forces the source code of derived works to be distributed under the same license. The LGPL allows other software to link to it without being forced to retain the same license. This makes it popular as a license for libraries and modules.",
-        "attributes":["copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
+        "attributes":["good for libraries", "copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
         "link": "http://www.gnu.org/licenses/lgpl-3.0.en.html"
     },
     "agpl":{
         "name":"AGPL",
         "description":"The AGPL (Affero General Public License) guarantees users the freedom to run, study, share, and modify software. AGPL forces the source code of derived works to be distributed under the same license. The AGPL fixes a loophole in the GPL by forcing modifications to be shared if modified LGPL source code is run on a server.",
-        "attributes":["copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
+        "attributes":["applies to hosted web apps", "copyleft", "attribution required", "disclosed source", "requires patent grant from contributors" ],
         "link": "http://www.gnu.org/licenses/why-affero-gpl.en.html"
     }
 }
