@@ -1,18 +1,76 @@
 {
     "type":"question",
-    "question":"do you like raspberry?",
-    "choices":["Yes","Not really"],
+    "question":"Are you licensing code?",
+    "choices":["Yes","No"],
     "Yes":{
-        "type":"license",
-        "id":"raspberry"
-    },
-    "Not really":{
         "type":"question",
-        "question":"do you like ice cream?",
-        "choices":["Yes"],
+        "question":"Do you want people to be able to modify your source code without disclosing their changes?",
+        "choices":["Yes", "No"],
         "Yes":{
-            "type":"license",
-            "id":"raspberry"
+            "type":"question",
+            "question":"Do you want to release your code into the public domain?",
+            "choices":["Yes","No"],
+            "Yes": {
+                "type":"license",
+                "id":"unlicense"
+            },
+            "No": {
+                "type":"question",
+                "question":"Do you want to force contributors to waive patent rights for their contributions?",
+                "choices":["Yes","No"],
+                "Yes":{
+                    "type":"license",
+                    "id":"apache"
+                },
+                "No":{
+                    "type":"question",
+                    "question":"Do you want to require that the license must be included when distruting binaries?",
+                    "choices":["Yes","No"],
+                    "Yes":{
+                        "type":"license",
+                        "id":"bsd"
+                    },
+                    "No":{
+                        "type":"license",
+                        "id":"mit"
+                    }
+                }
+            }
+        },
+        "No":{
+            "type":"question",
+            "question":"Do you want to allow programs to link to your code without disclosing their source?",
+            "choices":["Yes","No"],
+            "Yes":{
+                "type":"license",
+                "id":"lgpl"
+            },
+            "No":{
+                "type":"question",
+                "question":"Do you want source code changes to be disclosed for applications hosted as web apps?",
+                "choices":["Yes","No"],
+                "Yes":{
+                    "type":"license",
+                    "id":"agpl"
+                },
+                "No":{
+                    "type":"question",
+                    "question":"Do you want to prevent hardware from restricting modification of your software?",
+                    "choices":["Yes","No"],
+                    "Yes":{
+                        "type":"license",
+                        "id":"gplv3"
+                    },
+                    "No":{
+                        "type":"license",
+                        "id":"gplv2"
+                    }
+                }
+            }
         }
+    },
+    "No":{
+        "type":"license",
+        "id":"cc"
     }
 }
