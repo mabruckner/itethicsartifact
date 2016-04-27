@@ -6,6 +6,9 @@
 body {
     padding-top: 30px;
 }
+.backhidden {
+    visibility: hidden;
+}
 </style>
         <link href="/css/bootstrap.min.css" rel="stylesheet">
     </head>
@@ -19,7 +22,7 @@ body {
                 </ul>
             </nav>
             <div class="jumbotron" ng-if="current.type=='question'">
-                <button class="btn btn-sm" ng-click="back()"><span aria-hidden="true">&larr;</span> Back</button>
+                <button class="btn btn-sm" ng-class="answers.length==0 ? 'backhidden': ''"  ng-click="back()"><span aria-hidden="true">&larr;</span> Back</button>
                 <h3 class="text-center">{{ current.question }}</h3>
                 <div class="row text-center">
                     <div class="{{$parent.colclass($parent.current.choices.length)}} text-center" ng-repeat="choice in current.choices">
